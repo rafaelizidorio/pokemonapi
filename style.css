@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #202020;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 0px 0px 0px;
+}
+
+.container img{
+    width: 400px;
+}
+
+.container form{
+    margin-top: 25px;
+}
+
+.container form input{
+    padding: 10px;
+    width: 500px;
+
+    border-radius: 10px;
+    border: 0px;
+    height: 40px;
+}
+
+#busca:focus-within{
+    border-radius: 10px;
+    border: 0px;
+}
+
+.container form button{
+    padding: 10px;
+    width: 100px;
+
+    height: 40px;
+
+    border-radius: 10px;
+    border: 0px;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+    color: #fff;
+    background-color: #70adf3;
+}
+
+.container .error{
+    display: none;
+}
+
+.pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.card{
+    transition: 0.5s;
+    display: flex;
+
+    background-color: rgb(247, 244, 244);
+    border-radius: 20px;
+
+    width: 50%;
+    height: 500px;
+}
+
+.card .pokemon-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .pokemon-picture img{
+    width: 300px;
+    height: 300px;
+}
+
+.card .pokemon-picture h1{
+    color: rgb(36, 36, 36);
+}
+
+.card .pokemon-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card .pokemon-info h2,
+.card .pokemon-info h3{
+    margin: 10px;
+}
+
+.card .pokemon-info h3{
+    color: #505050;
+    font-size: 1em;
+}
+
+.card .pokemon-info h3 span{
+    color: #252525;
+    font-size: 1.1em;
+}
+
+.container .error{
+    margin-top: 250px;
+    padding: 20px;
+
+    background-color: #70adf3;
+    color: #fff;
+
+    border-radius: 10px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    font-size: 1em;
+    letter-spacing: 1px;
+}

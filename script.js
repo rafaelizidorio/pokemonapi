@@ -52,7 +52,8 @@ function startApp(pokeName) {
             container.innerHTML = createCard();
         }
         
-    }, 500); 
+    }, 500);
+    errado = ''; 
 }
 
 function createCard () {

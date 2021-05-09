@@ -16,6 +16,7 @@ body{
     align-items: center;
 
     background-color: #202020;
+    padding-bottom: 25px;
 }
 
 .container{
@@ -86,6 +87,8 @@ body{
 
     width: 50%;
     height: 500px;
+
+    margin-bottom: 40px;
 }
 
 .card .pokemon-picture{
@@ -140,4 +143,48 @@ body{
 
     font-size: 1em;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container button{
+        margin-top: 20px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        text-align: start;
+    }
+    .pokemon-info{
+        margin-top: 40px;
+    }
+  }
+
+@media only screen and (max-width: 518px){
+    .container form input{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 416px){
+    .container form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .container img{
+        width: 90%;
+    }
 }
